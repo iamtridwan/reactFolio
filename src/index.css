@@ -83,7 +83,7 @@ section {
   border-radius: 0 0 10px 10px;
   position: relative;
 }
-.profile .right p{
+.profile .right p {
   background-color: black;
   color: white;
   font-size: 36px;
@@ -115,14 +115,14 @@ section {
 .content {
   padding: 10px;
 }
-.content .bio h3, .bio p {
+.content .bio h3,
+.bio p {
   color: rgba(92, 2, 101, 1);
 }
-.bio{
+.bio {
   margin-top: 30px;
-  animation: slideIn 1s linear;
+  animation: slideIn 1s linear 3s backwards;
 }
-
 
 .skills li {
   opacity: 1;
@@ -301,6 +301,60 @@ button {
   text-align: center;
 }
 
+/* splash */
+
+.screen {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+
+
+.screen-content div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(233, 11, 109, 1) 17%,
+    rgba(92, 2, 101, 1) 100%,
+    rgba(36, 2, 55, 1) 100%,
+    rgba(244, 34, 122, 1) 120%
+  );
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 30px auto;
+  transition: transform 2s;
+}
+
+.screen-content h1{
+  margin: 0;
+  font-size: 5rem;
+  color: white;
+}
+
+.screen h3{
+  color: rgba(244, 34, 122, 1) ;
+  font-size: 2rem;
+  line-height: 25px;
+
+}
+
+
+
+
+
 @media screen and (min-width: 992px) {
   nav {
     width: 40%;
@@ -382,14 +436,14 @@ button {
 }
 
 @keyframes slideIn {
-  from{
+  from {
     opacity: 0;
     transform: translateY(30px);
   }
 
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
-  
 }
+

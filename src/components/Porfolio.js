@@ -67,7 +67,7 @@ const Porfolio = () => {
           <div className="detail">
             <p> WORLD COUNTRIES</p>
             <p>
-              A web app listing countries of the world. Built uing Angular and
+              A web app listing countries of the world. Built using Angular and
               REST API
             </p>
             <div className="btn">

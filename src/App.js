@@ -2,12 +2,17 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Porfolio from "./components/Porfolio";
 import { Link, Route, Routes } from "react-router-dom";
+import { Splash } from "./components/Splash";
+import { useState } from 'react'
 
 function App() {
-  // toogling nav height
-
+const [isSplash, setIsSplash] = useState(true)        
+setTimeout(() => {
+  setIsSplash(false)
+}, 3000)
   return (
     <div className="container">
+      {isSplash && <Splash />}
       <nav>
         <Link to="/">
           <li>
@@ -54,15 +59,12 @@ function App() {
       </nav>
 
       <section>
-      
-          <Routes>
-            <Route path="/" element={<Home />} exact />
-            <Route path="/portfolio" element={<Porfolio />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} exact />
+          <Route path="/portfolio" element={<Porfolio />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </section>
-
-      <footer></footer>
     </div>
   );
 }
