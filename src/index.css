@@ -172,7 +172,7 @@ section {
   transform: scale(1);
 }
 .card_1 {
-  background-image: url(./img/mobile-screen.png);
+  background-image: url(./img/zero.png);
 }
 .card_4 {
   background-image: url(./img/restcountries.png);
@@ -184,7 +184,7 @@ section {
   background-image: url(./img/rockpaper-main.png);
 }
 .card_5 {
-  background-image: url(./img/Screenshot\ 2021-08-06\ at\ 07-28-06\ Frontend\ Mentor\ Shortly\ URL\ shortening\ API\ Challenge.png);
+  background-image: url(./img/todo.png);
 }
 .card_6 {
   background-image: url(./img/ecommerc.png);

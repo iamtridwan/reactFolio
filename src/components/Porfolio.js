@@ -8,16 +8,21 @@ const Porfolio = () => {
         {/* card start */}
         <div className="card card_1">
           <div className="detail">
-            <p>BOOKMARK</p>
-            <p>A landing page built using HTML, CSS and JAVASCRIPT</p>
+            <p>DASHBOARD</p>
+            <p>
+              Angular web app built for zero depression counsellor dashboard
+            </p>
             <div className="btn">
               <a
-                href="https://github.com/iamtridwan/bookmark"
+                href="https://github.com/iamtridwan/counsellorboard"
                 target="_blank noreferrer"
               >
                 View Source
               </a>
-              <a href="https://bookmark.netlify.app" target="_blank noreferrer">
+              <a
+                href="https://counsellordashboard.netlify.app/"
+                target="_blank noreferrer"
+              >
                 See Live
               </a>
             </div>
@@ -51,12 +56,15 @@ const Porfolio = () => {
             <p>Rock paper scissors game built with vanilla js, HTML and CSS</p>
             <div className="btn">
               <a
-                href="https://github.com/iamtridwan/bookmark"
+                href="https://github.com/iamtridwan/rockpaperscissors"
                 target="_blank noreferrer"
               >
                 View Source
               </a>
-              <a href="https://bookmark.netlify.app" target="_blank noreferrer">
+              <a
+                href="https://game-rock.netlify.app"
+                target="_blank noreferrer"
+              >
                 See Live
               </a>
             </div>
@@ -72,12 +80,15 @@ const Porfolio = () => {
             </p>
             <div className="btn">
               <a
-                href="https://github.com/iamtridwan/bookmark"
+                href="https://github.com/iamtridwan/countries-of-the-world"
                 target="_blank noreferrer"
               >
                 View Source
               </a>
-              <a href="https://bookmark.netlify.app" target="_blank noreferrer">
+              <a
+                href="https://thecountriesoftheworld.netlify.app/"
+                target="_blank noreferrer"
+              >
                 See Live
               </a>
             </div>
@@ -86,20 +97,17 @@ const Porfolio = () => {
         {/* card start */}
         <div className="card card_5">
           <div className="detail">
-            <p>SHORTLY</p>
-            <p>
-              A landing page that shortens long url links. Built using HTML, CSS
-              , JAVASCRIPT and REST API
-            </p>
+            <p>TODO TASK</p>
+            <p>A simple todo task web app with theme changer</p>
             <div className="btn">
               <a
-                href="https://github.com/iamtridwan/shortly"
+                href="https://github.com/iamtridwan/mytodo"
                 target="_blank noreferrer"
               >
                 View Source
               </a>
               <a
-                href="https://shortlinks.netlify.app"
+                href="https://my-task-todo.netlify.app/"
                 target="_blank noreferrer"
               >
                 See Live
@@ -116,13 +124,13 @@ const Porfolio = () => {
             </p>
             <div className="btn">
               <a
-                href="https://github.com/iamtridwan/commerce"
+                href="https://github.com/iamtridwan/ecommerce"
                 target="_blank noreferrer"
               >
                 View Source
               </a>
               <a
-                href="https://ecommercepage.netlify.app"
+                href="https://ecommercedetailpage.netlify.app/"
                 target="_blank noreferrer"
               >
                 See Live

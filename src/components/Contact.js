@@ -1,24 +1,39 @@
 import React from "react";
+import { useState } from "react";
 
 const Contact = () => {
+
+  const [message, showMessage] = useState(false)
   return (
     <div className="contact">
       <h2>Interested in doing a project together?</h2>
       <div className="contact_ways">
-        <form action="mailto@iamtridwan@gmail.com" method="post">
+        <form
+          action="https://formsubmit.co/fcd0f0de637918bf6a78eab5edd89f55 "
+          method="POST"
+        >
           <div className="form-group">
             <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" />
+            <input type="text" id="name" name="name" required />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email:</label>
-            <input type="text" id="email" name="email" />
+            <input type="text" id="email" name="email" required />
           </div>
+          <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html" />
           <div className="form-group">
             <label htmlFor="message">Message:</label>
-            <textarea id="message"></textarea>
+            <textarea id="message" required></textarea>
           </div>
-          <button type="submit">Send Message</button>
+          <button
+            type="submit"
+            onClick={() => {
+              showMessage(!message);
+            }}
+          >
+            Send Message
+          </button>
+          {message && <p>Thank you for reaching us.</p>}
         </form>
         <div className="socials">
           <p>You can also connect with me on:</p>
