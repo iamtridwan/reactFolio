@@ -35,7 +35,7 @@ nav {
 
 nav li {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 nav a {
   background-color: transparent;
@@ -49,6 +49,7 @@ section {
   width: 90%;
   margin: 0 auto;
   transition: opacity 1s;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2), 2px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* profile */
@@ -78,7 +79,7 @@ section {
 .profile .right {
   width: 100%;
   height: 300px;
-  background: url(./img/IMG_20211103_093734.jpg) no-repeat center;
+  background: url(./img/ridwan.webp) no-repeat center;
   background-size: cover;
   border-radius: 0 0 10px 10px;
   position: relative;
@@ -121,7 +122,7 @@ section {
 }
 .bio {
   margin-top: 30px;
-  animation: slideIn 1s linear 3s backwards;
+  animation: slideIn 1s linear 2s backwards;
 }
 
 .skills li {
@@ -301,6 +302,7 @@ button {
   text-align: center;
 }
 
+.social_links 
 /* splash */
 
 .screen {
@@ -314,13 +316,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  
 }
 
-
-
-.screen-content div{
+.screen-content div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -338,22 +336,17 @@ button {
   transition: transform 2s;
 }
 
-.screen-content h1{
+.screen-content h1 {
   margin: 0;
   font-size: 5rem;
   color: white;
 }
 
-.screen h3{
-  color: rgba(244, 34, 122, 1) ;
+.screen h3 {
+  color: rgba(244, 34, 122, 1);
   font-size: 2rem;
   line-height: 25px;
-
 }
-
-
-
-
 
 @media screen and (min-width: 992px) {
   nav {
@@ -407,11 +400,11 @@ button {
     margin: 0 60px;
   }
 
-  .social_links a {
+  /* .social_links a {
     display: block;
     margin: 10px 0;
     width: 40px;
-  }
+  } */
   .social_links a img {
     margin: 0;
   }
@@ -446,4 +439,3 @@ button {
     transform: translateY(0);
   }
 }
-
