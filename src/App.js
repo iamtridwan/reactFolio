@@ -2,17 +2,10 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Porfolio from "./components/Porfolio";
 import { Link, Route, Routes } from "react-router-dom";
-import { Splash } from "./components/Splash";
-import { useState } from 'react'
 
 function App() {
-const [isSplash, setIsSplash] = useState(true)        
-setTimeout(() => {
-  setIsSplash(false)
-}, 3000)
   return (
     <div className="container">
-      {isSplash && <Splash />}
       <nav>
         <Link to="/">
           <li>
